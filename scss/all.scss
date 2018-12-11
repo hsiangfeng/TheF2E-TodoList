@@ -1,0 +1,13 @@
+@import "reset";
+@import "mixin";
+@import "variable";
+@import "grid";
+
+body{
+    font-family: $font-family;
+}
+*{
+    @include box-sizing;
+}
+//layout
+@import "layout";

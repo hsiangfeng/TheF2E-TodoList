@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>代辦事項</title>
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="scss/all.css">
+        <link rel="stylesheet" href="css/fontawesome.min.css">
+    </head>
+
+    <body>
+        <div class="wrap">
+            <nav class="main">
+                <ul>
+                    <li><a href="#">My Tasks</a></li>
+                    <li><a href="InProgress.html">In Progress</a></li>
+                    <li><a href="Completed.html" class="active">Completed</a></li>
+                </ul>
+            </nav>
+            <header class="header">
+                <a class="newTodo"> ＋　Add Task</a>
+                <div class="todolist" style="display: none;">
+                    <div class="todo-header">
+                        <h1>Type Something Here…</h1>
+                        <ul>
+                            <li><a href="#" class="linkStar"><i class="far fa-star"></i></a></li>
+                            <li><a href="#" class="linkPen"><i class="fas fa-pen"></i></a></li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="todo-body">
+                        <div class="data-time">
+                            <label for="deadline"><i class="far fa-calendar-alt"></i>&nbsp&nbspDeadline</label>
+                            <input type="date">
+                            <input type="time">
+                        </div>
+                        <div class="file">
+                            <label for="file"><i class="far fa-file"></i>&nbsp&nbspFile</label>
+                            <i class="fas fa-plus-square"></i>
+                        </div>
+                        <div class="comment">
+                            <label for="comment"><i class="far fa-comment"></i>&nbsp&nbspComment</label>
+                            <textarea name="comment" cols="30" rows="10" placeholder="Type your memo here…"></textarea>
+                        </div>
+                    </div>
+                    <div class="todo-footer">
+                        <a href="#" class="close"><i class="far fa-times-circle"></i>&nbsp&nbsp Cancel</a>
+                        <a href="#" class="add"><i class="far fa-plus-square"></i>&nbsp&nbsp Add Task</a>
+                    </div>
+                </div>
+            </header>
+            <section class="content">
+                <div class="todo-card">
+                    <div class="card-body">
+                        <input type="checkbox" name="" id="">
+                        <p class="todo-completed">Type Something Here…</p>
+                        <ul class="card-main">
+                            <li class="star"><a href="#"><i class="far fa-star"></i></a></li>
+                            <li class="pen"><a href="#"><i class="fas fa-pen"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <i class="far fa-calendar-alt"></i>10/10
+                        <i class="far fa-file"></i>
+                        <i class="far fa-comment"></i>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/all.js"></script>
+    </body>
+
+</html>

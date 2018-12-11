@@ -1,0 +1,174 @@
+@import "mixin";
+@import "variable";
+.wrap{
+    @include container;
+}
+.newTodo{
+    width: 100%;
+    border:0px;
+    font-size: 24px;
+    font-weight: bold;
+    padding:19px;
+    height: 65px;
+    display: block;
+    cursor: pointer;
+    background-color: $white;
+    &:hover{
+        background-color: $hex-deep-blue;
+        color:$white;
+    }
+}
+.main{
+    height: 76px;
+    background-color: $hex-blue;
+    @include flex-center;
+    li{
+        display: inline-block;
+        text-align: center;
+        a{
+            @include flex-center;
+            width: 200px;
+            height: 47px;
+            font-size: 24px;
+            text-decoration: none;
+            color:$hex-deep-blue;
+            &:hover,&.active{
+                border-bottom: 3px solid $hex-deep-blue;
+                color:$white;
+                font-weight: bold;
+            }
+        }
+    }
+}
+.header{
+    @include flex-center;
+    flex-direction: column;
+    margin: 22px auto;
+    background-color:$hex-shallow-blue;
+    padding:24px;
+    .todolist{
+        width: 80%;
+        margin-top:22px;
+        .todo-header{
+            @include flex-justify-sb;
+            h1{
+                font-size: $h1;
+            }
+            ul{
+                @include flex-center;
+                li{
+                    margin: auto 16px;
+                    .linkStar{
+                        color:$black;
+                        &:hover{
+                            color:$hex-deep-blue;
+                        }
+                    }
+                    .linkPen{
+                        color:$hex-blue;
+                        &:hover{
+                            color:$hex-deep-blue;
+                        }
+                    }
+                }
+            }
+        }
+        hr{
+            color:#c8c8c8;
+        }
+        .todo-body{
+            label{
+                display: block;
+                font-size: 20px;
+                font-weight: bold;
+            }
+            input{
+                width: 162px;
+                height: 35px;
+                border: 0;
+                margin-top: 8px;
+                margin-bottom: 22px;
+            }
+            textarea{
+                display: block;
+                width: 80%;
+                border: 0;
+                padding: 10px;
+                margin-top: 8px;
+                margin-bottom: 24px;
+            }
+            .fas.fa-plus-square{
+                color:#c8c8c8;
+                font-size: 35px;
+                margin-top: 11px;
+                margin-bottom: 27px;
+                cursor: pointer;
+                &:hover{
+                    color:$hex-deep-blue;
+                }
+            }
+        }
+        .todo-footer{
+            @include flex-center;
+            a{
+                width: 50%;
+                height: 60px;
+                text-decoration: none;
+                @include flex-center;
+                font-size: 24px;
+            }
+            .close{
+                background-color: $white;
+                color: $danger;
+                &:hover{
+                    background-color: $danger;
+                    color: $white;
+                }
+            }
+            .todoAdd{
+                color:$white;
+                background-color: $hex-blue;
+                &:hover{
+                    color:$hex-blue;
+                    background-color: $white;
+                }
+            }
+        }
+    }
+}
+.content{
+    .todo-card{
+        background-color: $hex-shallow-blue;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        .card-body{
+            display: flex;
+            input[type="checkbox"]{
+                width: 24px;
+                height: 24px;
+            }
+            p{
+                width: 100%;
+                font-size:24px;
+                &.todo-completed{
+                    text-decoration: line-through;
+                    color:#9B9B9B;
+                }
+            }
+            ul{
+                display: flex;
+                .star{
+                    margin-right: 32px;
+                }
+            }
+        }
+        .card-footer{
+            margin-top:20px;
+            padding-left:30px;
+        }
+        &.active{
+            background-color: $hex-yellow;
+        }
+    }
+}
