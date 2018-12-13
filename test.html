@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+
+    <body>
+            <input type="text" class="a">
+            <input type="text" class="b">
+            <input type="text" class="c">
+            <input type="text" class="d">
+            <a href="#" class="btnAdd">送出</a>
+            
+        <script>
+            var btnAdd = document.querySelector('.btnAdd');
+            var localData = JSON.parse(localStorage.getItem('ListData')) || [];
+            btnAdd.addEventListener('click', add);
+
+            function add(e) {
+                e.preventDefault();
+                let a = document.querySelector('.a');
+                let b = document.querySelector('.b');
+                let c = document.querySelector('.c');
+                let d = document.querySelector('.d');
+                let list = {
+                    dataA: a,
+                    dataB: b,
+                    dataC: c,
+                    dataD: d
+                }
+                localData.push(list);
+                localStorage.setItem('ListData', JSON.stringify(localData));
+                console.log(list);
+            }    
+        </script>
+    </body>
+
+</html>
