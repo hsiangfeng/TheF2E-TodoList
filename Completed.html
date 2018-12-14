@@ -22,20 +22,16 @@
             </nav>
             <header class="header">
                 <a class="newTodo"> ＋　Add Task</a>
-                <div class="todolist" style="display: none;">
+                <form class="todolist" style="display: none;">
                     <div class="todo-header">
                         <h1>Type Something Here…</h1>
-                        <ul>
-                            <li><a href="#" class="linkStar"><i class="far fa-star"></i></a></li>
-                            <li><a href="#" class="linkPen"><i class="fas fa-pen"></i></a></li>
-                        </ul>
                     </div>
                     <hr>
                     <div class="todo-body">
                         <div class="data-time">
                             <label for="deadline"><i class="far fa-calendar-alt"></i>&nbsp&nbspDeadline</label>
-                            <input type="date">
-                            <input type="time">
+                            <input type="date" class="todoDate inputdata">
+                            <input type="time" class="todoTime inputdata">
                         </div>
                         <div class="file">
                             <label for="file"><i class="far fa-file"></i>&nbsp&nbspFile</label>
@@ -43,14 +39,14 @@
                         </div>
                         <div class="comment">
                             <label for="comment"><i class="far fa-comment"></i>&nbsp&nbspComment</label>
-                            <textarea name="comment" cols="30" rows="10" placeholder="Type your memo here…"></textarea>
+                            <textarea name="comment" cols="30" rows="10" placeholder="Type your memo here…" class="todoContent inputdata"></textarea>
                         </div>
                     </div>
                     <div class="todo-footer">
-                        <a href="#" class="close"><i class="far fa-times-circle"></i>&nbsp&nbsp Cancel</a>
-                        <a href="#" class="add"><i class="far fa-plus-square"></i>&nbsp&nbsp Add Task</a>
+                        <a href="#" type="reset" class="close"><i class="far fa-times-circle"></i>&nbsp&nbsp Cancel</a>
+                        <a href="#" class="todoAdd"><i class="far fa-plus-square"></i>&nbsp&nbsp Add Task</a>
                     </div>
-                </div>
+                </form>
             </header>
             <section class="content">
                 <div class="todo-card">

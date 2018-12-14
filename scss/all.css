@@ -314,7 +314,7 @@ body {
   font-size: 24px;
 }
 
-.content .todo-card .card-body p.active.todo-completed {
+.content .todo-card .card-body p.todo-completed {
   text-decoration: line-through;
   color: #9B9B9B;
 }
@@ -323,10 +323,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.content .todo-card .card-body ul .star {
-  margin-right: 32px;
 }
 
 .content .todo-card .card-footer {
