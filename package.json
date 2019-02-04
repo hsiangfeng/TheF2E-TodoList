@@ -1,0 +1,27 @@
+{
+  "name": "thef2e-todolist",
+  "version": "1.0.0",
+  "description": "純JS寫法",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hsiangfeng/TheF2E-TodoList.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hsiangfeng/TheF2E-TodoList/issues"
+  },
+  "homepage": "https://github.com/hsiangfeng/TheF2E-TodoList#readme",
+  "devDependencies": {
+    "eslint": "^5.12.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0"
+  }
+}
