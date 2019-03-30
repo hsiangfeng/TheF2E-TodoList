@@ -5,7 +5,8 @@
 
 ## Demo
 [https://hsiangfeng.github.io/TheF2E-TodoList/](https://hsiangfeng.github.io/TheF2E-TodoList/)
-
+## 設計稿
+[https://hexschool.github.io/THE_F2E_Design/todolist/?fbclid=IwAR0NTsDPVXPRTS3uzGbyed22cDBCZZWAthO5bAh_XdbuPeOJ7NodGyc1KUg](https://hexschool.github.io/THE_F2E_Design/todolist/?fbclid=IwAR0NTsDPVXPRTS3uzGbyed22cDBCZZWAthO5bAh_XdbuPeOJ7NodGyc1KUg)
 ## 使用技術&練習技術
 - Vuejs
 - JavaScript(ES6)
